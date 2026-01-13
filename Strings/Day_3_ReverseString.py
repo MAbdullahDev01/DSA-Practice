@@ -1,19 +1,22 @@
-# Problem: Reverse a string without using slicing.
-# Learning Objectives: String manipulation, loops, building new string.
+# Problem: Reverse a list without using slicing.
+# Learning Objectives: Loop traversal, building a new list, index handling.
 
 from utils.Random_List_Generator import randomListGenerator
 
-def reverseList(orignal_list):
-    reversed_list = [] # Initializing an empty list
+def reverseList(original_list):
+    reversed_list = []
 
-    for i in range(len(orignal_list), 1, -1):
-        reversed_list.append(orignal_list[i - 1])
-    reversed_list.append(orignal_list[0])
-    print(reversed_list)
+    # Traverse from last index to first
+    for i in range(len(original_list) - 1, -1, -1):
+        reversed_list.append(original_list[i])
 
-# Time complexity: O(n)
+    return reversed_list
 
-num = randomListGenerator(15, 1, 100) # Generating a random list of integers
-print(num)
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
-reverseList(num) # Calling the reverseList function
+nums = randomListGenerator(15, 1, 100)
+print("Original list:", nums)
+
+reversed_nums = reverseList(nums)
+print("Reversed list:", reversed_nums)
