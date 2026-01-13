@@ -1,10 +1,10 @@
 # Problem: Find the maximum and minimum in an array.
 # Learning Objectives: Array traversal, comparison, Python max, min.
 
-from utils.Random_List_Generator import Random_List_Generator
+from utils.Random_List_Generator import randomListGenerator
 
 # Generate a random list
-num_list = Random_List_Generator(15, 1, 100)
+num_list = randomListGenerator(15, 1, 100)
 print("Random List:", num_list)
 
 # Manual max/min calculation

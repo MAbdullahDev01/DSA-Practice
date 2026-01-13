@@ -6,7 +6,7 @@ test_case_2 : list = [0, 2, 4, 0, 3, 4, 7, 9, 0]
 test_case_3 : list = [1, 0, 4, 0, 2, 0, 6, 0, 7]
 
 
-def MoveZeros(num):
+def moveZeros(num):
     writer = 0 # This pointer tracks the position to "write" the next non-zero number
 
     for reader in range(len(num)):
@@ -15,8 +15,8 @@ def MoveZeros(num):
             writer += 1
     print(num)
 
-MoveZeros(test_case_1)
-MoveZeros(test_case_2)
-MoveZeros(test_case_3)
+moveZeros(test_case_1)
+moveZeros(test_case_2)
+moveZeros(test_case_3)
 
 #Time Complexity: O(n)
